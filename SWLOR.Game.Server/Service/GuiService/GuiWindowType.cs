@@ -52,6 +52,7 @@
         StatRebuild = 47,
         AssociateCharacterSheet = 48,
         HoloNet = 49,
+        MusicManager = 51,
         DebugEnmity = 900,
     }
 }

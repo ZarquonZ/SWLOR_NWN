@@ -16,6 +16,7 @@ using SWLOR.Game.Server.Core.NWNX;
 using System.Threading.Tasks;
 using Discord;
 using Discord.Webhook;
+using SWLOR.Game.Server.Feature.GuiDefinition;
 
 namespace SWLOR.Game.Server.Feature.ChatCommandDefinition
 {
@@ -51,6 +52,7 @@ namespace SWLOR.Game.Server.Feature.ChatCommandDefinition
             Notes();
             CreatureManager();
             Broadcast();
+            MusicManager();
 
             return _builder.Build();
         }
@@ -888,6 +890,16 @@ namespace SWLOR.Game.Server.Feature.ChatCommandDefinition
                             await client.SendMessageAsync(string.Empty, embeds: new[] { embed.Build() });
                         }
                     });
+                });
+        }
+        private void MusicManager()
+        {
+            _builder.Create("mm", "music")
+                .Description("Toggles the Music Manager window.")
+                .Permissions(AuthorizationLevel.DM, AuthorizationLevel.Admin)
+                .Action((user, target, location, args) =>
+                {
+                    Gui.TogglePlayerWindow(user, GuiWindowType.MusicManager);
                 });
         }
     }

@@ -53,6 +53,8 @@
         AssociateCharacterSheet = 48,
         HoloNet = 49,
         MusicManager = 51,
+        Stables = 50,
+
         DebugEnmity = 900,
     }
 }

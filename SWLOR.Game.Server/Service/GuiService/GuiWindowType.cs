@@ -54,6 +54,7 @@
         HoloNet = 49,
         MusicManager = 51,
         Stables = 50,
+        TrainingStore = 51,
 
         DebugEnmity = 900,
     }

@@ -185,13 +185,13 @@ namespace SWLOR.Game.Server.Feature.LootTableDefinition
                 .AddGold(500, 1);
 
             _builder.Create("QIONHIVE_CHAMPION_KEY")
-                .AddItem("qion_championkey", 1);
+                .AddItem("qion_shamanchamb", 1);
 
             _builder.Create("QIONHIVE_SHAMAN_KEY")
-                .AddItem("qion_shamankey", 1);
+                .AddItem("qion_chieftainch", 1);
 
             _builder.Create("QIONHIVE_CHIEFTAIN_KEY")
-                .AddItem("qion_chieftainke", 1);
+                .AddItem("qion_outerhiveke", 1);
 
             _builder.Create("QIONHIVE_BROODMOTHER_RECIPE")
                 .AddItem("recipe_saberupg1", 10)
